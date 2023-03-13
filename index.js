@@ -10,7 +10,7 @@ class List {
 
     if (data && isString && data.length === 1) {
       this.#list.push(data);
-    } 
+    } else throw new Error("Error. Wrong input data type, expected type char.");
   }
 
   insert(data, index) {
