@@ -6,7 +6,7 @@ class List {
   }
 
   append(data) {
-    const isString = typeof data;
+    const isString = typeof data === 'string';
 
     if (data && isString && data.length === 1) {
       this.#list.push(data);
@@ -14,7 +14,7 @@ class List {
   }
 
   insert(data, index) {
-    const isString = typeof data;
+    const isString = typeof data  === 'string';
 
     if (data && isString && data.length === 1) {
       if (index < 0 || index > this.#list.length) {
